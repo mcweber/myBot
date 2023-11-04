@@ -7,10 +7,6 @@ from langchain.schema import (
 )
 from langchain.callbacks import get_openai_callback
 
-import os
-from apikey import apikey
-os.environ["OPENAI_API_KEY"] = apikey
-
 def init_page():
     st.set_page_config(
         page_title="Mein persönlicher ChatBot",
